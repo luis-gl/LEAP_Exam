@@ -1,0 +1,2 @@
+Pregunta 1:
+  Si el algoritmo está bien escrito, retorna si el número ingresado es múltiplo de 2 hasta su raíz cuadrada redondeado al mayor.
