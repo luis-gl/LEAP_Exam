@@ -1,0 +1,4 @@
+Pregunta 8:
+  Se puede implementar un Object Pool con una cola por ejemplo. De tal manera que cuando el enemigo sea derrotado, se desactiven los
+  componentes necesarios y se añada a la cola. Así, cuando se necesite aparecer un nuevo enemigo, sólo se extrae de la cola, se activan
+  sus componentes nuevamente y se modifican los valores necesarios para su comportamiento.
