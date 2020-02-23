@@ -1,0 +1,5 @@
+Ejecutar con Python 3.7.3
+
+Instalar modulos: numpy
+
+*(math y random vienen con el compilador)

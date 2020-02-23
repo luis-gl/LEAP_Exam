@@ -38,4 +38,5 @@ def CheckCollisions(a, b, c):
     if (CheckBounds(b, c)):
         print("%s collides with %s" %(b.name, c.name))
 
+# Function call
 CheckCollisions(rectA, rectB, rectC)
