@@ -1,0 +1,6 @@
+A partir de los datos brindados me di cuenta que los enemigos pueden ser separados primero por visibilidad (Render),
+luego por distancia, y después por posición respecto a la visión del personaje (a partir del vector forward). Hasta
+antes de la separación por visión, pertenecen a un mismo grupo, por lo que al calcular si están frente o detrás del
+jugador se añaden a una lista diferente de enemigos (forwardEnemies y backwardEnemies). Finalmente, se verifica por
+prioridad a forwardEnemies, en caso haya un enemigo ideal, lo retorna; caso contrario, verifica backwardEnemies y
+selecciona un ideal. Si ninguno posee un enemigo ideal (las listas están vacías), se retorna null.
