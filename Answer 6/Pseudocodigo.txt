@@ -1,0 +1,23 @@
+start
+	function LockOnEnemy (maxAngle:float, pos:Vector3, forward:Vector3, activeEnemies:List of Enemy) returns Enemy
+		var forwardEnemies:List of Enemy
+		var backwardEnemies:List of Enemy
+		for each enemy in activeEnemies do
+			if enemy.isVisible == true do
+				distance <- CalculateDistance(enemy, player)
+				if distance <= 20 do
+					fixedPos <- enemy.pos - pos
+					angle <- AngleBetween(fixedPos, forward)
+					if angle <= maxAngle do
+						forwardEnemies.Add(enemy)
+					else do
+						backwardEnemies.Add(enemy)
+		if forwardEnemies.Count > 0 do
+			forwardEnemies <- SortByDistanceFromMinor(forwardEnemies)
+			return forwardEnemies[0]
+		else if backwardEnemies.Count > 0 do
+			backwardEnemies <- SortByDistanceFromMinor(backwardEnemies)
+			return backwardEnemies[0]
+		else do
+			return null
+end
