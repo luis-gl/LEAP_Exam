@@ -3,3 +3,5 @@ Ejecutar con Python 3.7.3
 Instalar modulos: numpy
 
 *(math y random vienen con el compilador)
+
+En Function call se imprimen los puntos con la función: PrintPoints(centroX, centroY, radio, cantPuntos)

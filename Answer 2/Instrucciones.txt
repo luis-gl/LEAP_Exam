@@ -1,1 +1,5 @@
 Ejecutar con Python 3.7.3
+
+En Rect definitions se crean los objetos rectángulos con: Rect(nombre, centroX, centroY, ancho, alto).
+
+En Function call se escogen los 3 rectángulos a verificar.
