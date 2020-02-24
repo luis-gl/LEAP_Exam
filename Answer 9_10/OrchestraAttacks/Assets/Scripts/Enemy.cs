@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     public string enemyType;
 
     [Header("Enemy Attacks")]
-    public EnemyAttack[] enemyAttacks;
+    [SerializeField] private EnemyAttack[] enemyAttacks;
 
     [Header("Enemy Variables")]
     public KeyCode keyToAttack;
@@ -37,6 +37,7 @@ public class Enemy : MonoBehaviour
         if (canAttack)
         {
             OrchestraSystem.instance.NotifyAttackToEnemies(this, false);
+            OrchestraSystem.instance.AddAttack();
             isAttacking = true;
             Debug.Log("El sistema ha permitido el ataque a " + gameObject.name);
             StartCoroutine(WaitUntilFinishAttack());
@@ -45,9 +46,9 @@ public class Enemy : MonoBehaviour
         else Debug.Log("El sistema ha bloqueado el ataque a " + gameObject.name + " debido al bloqueo por tipo");
     }
     
-    public void GetEnemyAttacks()
+    public EnemyAttack[] GetEnemyAttacks()
     {
-        
+        return enemyAttacks;
     }
     
     IEnumerator WaitUntilFinishAttack()
