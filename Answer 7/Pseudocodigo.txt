@@ -1,0 +1,39 @@
+start
+	var activeEnemies:List of Enemy
+	var n:int
+	var currentN:int
+	var maxDistance:float
+	var shockedEnemies:List of Enemy
+
+	function OnMeleeAttackConnected ()
+		rnd <- RandomInt(0, 100)
+		currentN <- 0
+		if rnd > 25 and rnd <= 50 do
+			thisEnemy.DoDamage(10)
+			shockedEnemies.Add(thisEnemy)
+			currentN <- currentN + 1
+			thisEnemy.Interlink()
+		end if
+	end function
+
+	function Interlink()
+		var selectedEnemies: List of Enemy
+		for each enemy in activeEnemies do
+			if enemy != thisEnemy and CalculateDistanceFromHere(thisEnemy, enemy) <= maxDistance
+			and IsNotRepeatedIn(enemy, shockedEnemies) do
+				selectedEnemies.Add(enemy)
+			end if
+		end for each
+		rnd <- RandomInt(0, selectedEnemies.Count)
+		selectedEnemies[rnd].DoDamage(10)
+		rndQ <- RandomInt(0, 10)
+		if rndQ == 3 and currentN <= n do
+			currentN <- currentN + 1
+			shockedEnemies.Add(selectedEnemies[rnd])
+			selectedEnemies[rnd].Interlink()
+		else do
+			currentN <- 0
+			shockedEnemies.Clear()
+		end if
+	end function
+end

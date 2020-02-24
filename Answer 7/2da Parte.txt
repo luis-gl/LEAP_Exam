@@ -1,0 +1,4 @@
+Otra forma de realizar la activación del power up es calculando en cada momento, dentro del script de Enemy, una lista de
+enemigos lo suficientemente cercanos para ser atacados por el power up. Así se revisa si el enemigo seleccionado ya ha sido
+afectado por el shock y se elimina de dicha lista, para luego activar la función sólo en los enemigos disponibles. Todo esto
+tendría un gran costo de recursos en la plataforma, pero es una opción en caso no se disponga de la lista de enemigos activos.

@@ -1,0 +1,4 @@
+Asumí que las listas llamadas activeEnemies (según el texto) y shockedEnemies (creado en el pseudocodigo), junto a N (máximo
+de veces que puede activarse en secuencia) y currentN (contador con ese fin) son accesibles globalmente por cada Enemy y que
+OnMeleeAttackConnected contiene lo escrito en la función dentro del pseudocódigo, además de la existencia de una función
+llamada Interlink.

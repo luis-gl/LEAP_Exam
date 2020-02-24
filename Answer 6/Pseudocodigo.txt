@@ -12,6 +12,10 @@ start
 						forwardEnemies.Add(enemy)
 					else do
 						backwardEnemies.Add(enemy)
+					end if
+				end if
+			end if
+		end for each
 		if forwardEnemies.Count > 0 do
 			forwardEnemies <- SortByDistanceFromMinor(forwardEnemies)
 			return forwardEnemies[0]
@@ -20,4 +24,6 @@ start
 			return backwardEnemies[0]
 		else do
 			return null
+		end if
+	end function
 end
