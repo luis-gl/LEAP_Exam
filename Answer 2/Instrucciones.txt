@@ -1,5 +1,10 @@
-Ejecutar con Python 3.7.3
+# Versión Python "RectangleCollision.py":
 
-En Rect definitions se crean los objetos rectángulos con: Rect(nombre, centroX, centroY, ancho, alto).
+    - Ejecutar con Python 3.7.3
+    - En Rect definitions se crean los objetos rectángulos con: Rect(nombre, centroX, centroY, ancho, alto).
+    - En Function call se escogen los 3 rectángulos a verificar.
 
-En Function call se escogen los 3 rectángulos a verificar.
+# Versión C++ "main.cpp":
+    - Si no se tiene compilador g++ instalar MinGWin (tutorial: https://youtu.be/bw6b5Gz5P8g).
+    - En la función main (línea 97 en adelante), cambiar los valores de los constructores de objetos, sigue el siguiente orden: (nombre, centro, ancho, alto).
+    - Guardar el archivo y en la línea de comandos dentro de la carpeta "Answer 2" escribir "g++ main.cpp -o main.exe", ejecutar y luego abrir el .exe o desde la línea de comandos ejecutar "main.exe".
