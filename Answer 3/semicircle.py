@@ -14,4 +14,4 @@ def PrintPoints(cx, cy, r, n):
         print("(%f, %f)" %(x,y))
 
 # Function call
-PrintPoints(-1.5, 2, 3, 5)
+PrintPoints(0, 0, 1, 5)
