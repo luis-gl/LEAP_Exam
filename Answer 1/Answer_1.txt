@@ -1,2 +1,2 @@
 Pregunta 1:
-  Si el algoritmo está bien escrito, retorna si el número ingresado es múltiplo de 2 hasta su raíz cuadrada redondeado al mayor.
+  El algoritmo devuelve los números primos mayores que 2 además de 0 y 1 que no se consideran números primos.
