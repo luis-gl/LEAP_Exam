@@ -1,0 +1,7 @@
+- Si no se tiene compilador g++ instalar MinGWin (tutorial: https://youtu.be/bw6b5Gz5P8g).
+- En la función "main" (línea 37 en adelante), cambiar los valores de las variables usadas en la función PrintPoints, estas siguen el sgte. orden y tipos:
+    * center: Vector2(x,y)
+    * radius: float
+    * pointQuantity: int
+- Guardar el archivo y en la línea de comandos dentro de la carpeta "Q3_Answer" escribir "g++ main.cpp -o main.exe", ejecutar.
+- Desde la línea de comandos ejecutar "main.exe".

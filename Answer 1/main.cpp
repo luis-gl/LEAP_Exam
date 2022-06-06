@@ -14,7 +14,7 @@ bool xyz(int n)
         else
             x++;
     }
-    return  true;
+    return true;
 }
 
 int main()
